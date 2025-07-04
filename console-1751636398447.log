@@ -1,0 +1,165 @@
+var obj = null;
+undefined
+if(obj!=null){
+    console.log(obj.name);
+}
+else{
+    console.log("Nothing");
+}
+VM230:5 Nothing
+undefined
+obj.name;
+VM270:1 Uncaught TypeError: Cannot read properties of null (reading 'name')
+    at <anonymous>:1:5
+(anonymous) @ VM270:1
+var a = 10;
+undefined
+a.push(100);
+VM383:1 Uncaught TypeError: a.push is not a function
+    at <anonymous>:1:3
+(anonymous) @ VM383:1
+if(obj){
+    console.log(obj.name);
+}
+else{
+    console.log("Nothing");
+}
+VM394:5 Nothing
+undefined
+obj;
+null
+obj = {name:'Amit'}
+{name: 'Amit'}
+if(obj){
+    console.log(obj.name);
+}
+else{
+    console.log("Nothing");
+}
+VM446:2 Amit
+undefined
+var x ;
+undefined
+if(x){
+ console.log('Truthy');   
+}
+else{
+    console.log('Falsy');
+}
+VM569:5 Falsy
+undefined
+x=10;
+10
+if(x){
+ console.log('Truthy');   
+}
+else{
+    console.log('Falsy');
+}
+VM587:2 Truthy
+undefined
+x=0;
+0
+if(x){
+ console.log('Truthy');   
+}
+else{
+    console.log('Falsy');
+}
+VM604:5 Falsy
+undefined
+x = 20;
+20
+if(x){
+ console.log('Truthy');   
+}
+else{
+    console.log('Falsy');
+}
+VM623:2 Truthy
+undefined
+x = undefined;
+undefined
+if(x){
+ console.log('Truthy');   
+}
+else{
+    console.log('Falsy');
+}
+VM659:5 Falsy
+undefined
+x = "";
+''
+if(x){
+ console.log('Truthy');   
+}
+else{
+    console.log('Falsy');
+}
+VM679:5 Falsy
+undefined
+ var count = 0;
+undefined
+function incCount(){
+    count++;
+    return count;
+}
+undefined
+incCount();
+1
+incCount();
+2
+incCount();
+3
+incCount();
+4
+incCount();
+5
+count = 0;
+0
+incCount();
+1
+incCount();
+2
+count = "AMit";'
+VM915:1 Uncaught SyntaxError: Invalid or unexpected token
+count = "AMit";
+'AMit'
+incCount();
+NaN
+incCount();
+NaN
+function init(){
+    var c = 0;
+    return function counter(){
+        c++;
+        return c;
+    }
+}
+undefined
+var t = init();
+undefined
+typeof t;
+'function'
+t;
+ƒ counter(){
+        c++;
+        return c;
+    }
+console.dir(t);
+VM1191:1 ƒ counter()length: 0name: "counter"prototype: {}arguments: nullcaller: null[[FunctionLocation]]: VM1058:3[[Prototype]]: ƒ ()[[Scopes]]: Scopes[2]0: Closure (init) {c: 0}1: Global {window: Window, self: Window, document: document, name: '', location: Location, …}
+undefined
+t();
+1
+t();
+2
+t();
+3
+t();
+4
+t();
+5
+c;
+VM1236:1 Uncaught ReferenceError: c is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1236:1
